@@ -1,0 +1,48 @@
+.card-part {
+    width: 50%;
+    color: #fff;
+    background-color: rgb(49,49,49);
+}
+.card-part-body {
+    width: 80%;
+    text-align: center;
+    background-image: url(../assets/13277783-arriere-plan-ondule-noir-elegant-pour-cartes-de-visite-presentations-bannieres-etc-vectoriel.jpg);
+    background-size: cover;
+    border-radius: 3px;
+    margin: 5%;
+    padding: 2%;
+    box-shadow: 0px 0px 10px 0px;
+    transition: .3s;
+}
+.card-part-body:hover{
+    transform: scale(1.03);
+}
+.card-part-border {
+    border: 2px solid darkgoldenrod;
+}
+.card-part-name {
+    font-style: italic;
+    font-size: 20px;
+}
+.card-part-ent{
+    font-style: italic;
+}
+hr {
+    width: 75%;
+    border: 1px solid darkgoldenrod;
+}
+.card-part-body-footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+@media screen and (max-width: 800px) {
+    .card-part{
+        width: auto;
+    }
+    .card-part-body{
+        margin: 8.5%;
+    }
+}

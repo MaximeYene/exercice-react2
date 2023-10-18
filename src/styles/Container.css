@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(49,49,49);
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin-top: 2%;
+}
+
+@media screen and (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}
