@@ -36,6 +36,10 @@ const [submitted,setSubmitted]=useState(false);
     const handleSubmit=(e)=>{
         e.preventDefault();
         setSubmitted(true);
+
+        if(name.trim()===''|| profession.trim()==='' || nomEntreprise.trim()==='' || phone.trim()==='' || address.trim()==='' || website.trim()===''){
+            alert('Veuillez remplir tous les champs');
+        }
         props.onDataChange(name,profession,nomEntreprise,phone,mail,address,website);
     }
     const title="Veuillez entrer vos  dans le formulaire ci dessous :";
@@ -49,7 +53,7 @@ const [submitted,setSubmitted]=useState(false);
             Email :<input type='email' placeholder='Entrez votre email' value={mail} required onChange={handleMailChange} />
             Adresse :<input type='text' placeholder='Donnez votre adresse' value={address} required onChange={handleAddressChange} />
             Nom de votre Site :<input type='text' placeholder='Entrez le nom de votre site' value={website} required onChange={handleWebsiteChange} />            
-            <button>Valider</button>
+            <button type='submit'>Valider</button>
             {submitted}
         </form>
     </div>)

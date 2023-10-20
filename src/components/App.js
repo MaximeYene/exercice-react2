@@ -26,7 +26,7 @@ const [data,setData]=useState(null)
     setData({name,profession,nomEntreprise,phone,mail,address,website})
   }
   return(<div className='container'>
-    <CustomerInformations onDataChange={handleDataChange} />
+  <CustomerInformations onDataChange={handleDataChange}/>
     {data && <VisitCard name={name} profession={profession} nomEntreprise={nomEntreprise} phone={phone} mail={mail} address={address} website={website} />}
   </div>)
 }
